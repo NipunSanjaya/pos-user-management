@@ -1,23 +1,19 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import CreateUser from './CreateUser';
+import ListUsers from './ListUsers';
+import GetUserDetails from './GetUserDetails';
+import UpdateUser from './UpdateUser';
+import DeleteUser from './DeleteUser';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h1>User Management</h1>
+      <CreateUser />
+      <ListUsers />
+      <GetUserDetails />
+      <UpdateUser />
+      <DeleteUser />
     </div>
   );
 }
